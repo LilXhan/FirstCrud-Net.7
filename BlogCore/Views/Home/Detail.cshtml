@@ -1,0 +1,20 @@
+﻿@model BlogCore.Models.Contact
+
+@{
+    ViewData["title"] = "Detail contact";
+}
+
+<h1 class="text-center">Contact with .NET 7 (.Net Core MVC)</h1>
+<div class="row">
+    <div class="offset-12">
+       <div class="card" style="width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">@Html.DisplayFor(m => m.Name)</h5>
+            <p class="card-text">@Html.DisplayFor(m => m.Phone)</p>
+            <p class="card-text">@Html.DisplayFor(m => m.Smarthphone)</p>
+            <p class="card-text">@Html.DisplayFor(m => m.Email)</p>
+            <a asp-action="Index" asp-controller="Home" class="btn btn-primary">Volver</a>
+          </div>
+       </div>
+    </div>
+</div>
